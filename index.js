@@ -24,8 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const categoryName = document.createElement('p')
             categoryName.textContent = category.charAt(0).toUpperCase() + category.slice(1)
 
+            // Like and Dislike buttons
+            const likeButton = document.createElement('button')
+            likeButton.textContent = "👍 Like"
+            const dislikeButton = document.createElement('button')
+            dislikeButton.textContent = "👎 Dislike"
+
             imgContainer.appendChild(imgFood)
             imgContainer.appendChild(categoryName)
+            imgContainer.appendChild(likeButton)
+            imgContainer.appendChild(dislikeButton)
             foodMenu.appendChild(imgContainer)
         })
 
