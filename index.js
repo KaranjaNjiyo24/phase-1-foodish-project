@@ -67,7 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
             //Handle content submission
             submitCommentButton.addEventListener('click', () => {
                 const comment = commentTextArea.value.trim()
-                if (comment !== "") {
+                if (comment.length > 250) {
+                    alert("Commnet should be 250 characters or less.")
+                } else if (comment !== "") {
                     const commentParagraph = document.createElement('p')
                     commentParagraph.textContent = comment
                     commentsContainer.appendChild(commentParagraph)
