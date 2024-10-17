@@ -44,10 +44,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 dislikeButton.textContent = `👎 Dislike (${dislikeCount})`
             })
 
+            //Comments text area
+            const commentTextArea = document.createElement('textarea')
+            commentTextArea.placeholder = "Leave a comment..."
+            commentTextArea.rows = 3
+            commentTextArea.style.width = "90%"
+            commentTextArea.style.margin = "10px 0"
+
+            //Create button to submit comments
+            const submitCommentButton = document.createElement('button')
+            submitCommentButton.textContent = "Submit Comment"
+            submitCommentButton.style.display = "block"
+            submitCommentButton.style.margin = "10px auto"
+
+
             imgContainer.appendChild(imgFood)
             imgContainer.appendChild(categoryName)
             imgContainer.appendChild(likeButton)
             imgContainer.appendChild(dislikeButton)
+            imgContainer.appendChild(commentTextArea)
+            imgContainer.appendChild(submitCommentButton)
             foodMenu.appendChild(imgContainer)
         })
 
