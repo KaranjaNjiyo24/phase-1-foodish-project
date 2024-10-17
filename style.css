@@ -23,3 +23,17 @@ h1 {
     margin: 20px;
 }
 
+#food-menu div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+#food-menu div:hover {
+    transform: scale(1.05);
+}
+
+#food-menu img {
+    border-radius: 20px;
+}
