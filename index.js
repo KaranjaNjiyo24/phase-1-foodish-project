@@ -85,7 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     commentContainer.appendChild(editButton)
                     commentContainer.appendChild(deleteButton)
                     commentsContainer.appendChild(commentContainer)
-                    
+
+                    //Now that buttons are done, lets add some functionality
+                    deleteButton.addEventListener('click', () => {
+                        commentsContainer.removeChild(commentContainer)
+                    })
+
                     commentTextArea.value = ""
                 } else {
                     alert ("Please enter a valid comment.")
