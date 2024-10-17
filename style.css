@@ -37,3 +37,20 @@ h1 {
 #food-menu img {
     border-radius: 20px;
 }
+
+/*Button styles*/
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e65b53;
+}
