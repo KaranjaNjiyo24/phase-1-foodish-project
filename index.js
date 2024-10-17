@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(res => res.json())
         .then(data => {
 
-            const imgContainer = document.createElement('img')
+            const imgContainer = document.createElement('div')
             imgContainer.style.margin = "10px"
             //Create an image element to specify the size and store an image
             const imgFood = document.createElement('img')
