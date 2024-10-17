@@ -93,7 +93,6 @@ If you'd like to contribute to the project (new features, bug fixes, or improvem
 
 ## 📧 **Contact**
 Got feedback or questions? Reach out at:
-- **Email**: karanjaandrew2000@gmail.com
 - **LinkedIn**: [AndrewNjiyo](https://www.linkedin.com/in/karanjanjiyo/)
 
 ---
