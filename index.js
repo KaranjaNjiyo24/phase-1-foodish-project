@@ -54,12 +54,15 @@ document.addEventListener("DOMContentLoaded", () => {
             //Create button to submit comments
             const submitCommentButton = document.createElement('button')
             submitCommentButton.textContent = "Submit Comment"
+            submitCommentButton.classList.add('comment-button')
             submitCommentButton.style.display = "block"
             submitCommentButton.style.margin = "10px auto"
+
 
             //create a container for comments
             const commentsContainer = document.createElement('div')
             commentsContainer.style.marginTop = "10px"
+            commentsContainer.classList.add('comments-container')
 
             //Handle content submission
             submitCommentButton.addEventListener('click', () => {
@@ -69,6 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     commentParagraph.textContent = comment
                     commentsContainer.appendChild(commentParagraph)
                     commentTextArea.value = ""
+                } else {
+                    alert ("Please enter a valid comment.")
                 }
             })
 
