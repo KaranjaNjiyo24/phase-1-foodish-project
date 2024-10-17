@@ -25,10 +25,24 @@ document.addEventListener("DOMContentLoaded", () => {
             categoryName.textContent = category.charAt(0).toUpperCase() + category.slice(1)
 
             // Like and Dislike buttons
+            let likeCount = 0
+            let dislikeCount = 0
+
             const likeButton = document.createElement('button')
-            likeButton.textContent = "👍 Like"
+            likeButton.textContent = "👍 Like (${likeCount})"
             const dislikeButton = document.createElement('button')
-            dislikeButton.textContent = "👎 Dislike"
+            dislikeButton.textContent = "👎 Dislike (${dislikeCount})"
+
+            // Click event listeners on like and dislike buttons
+            likeButton.addEventListener('click', () => {
+                likeCount++
+                likeButton.textContent = `👍 Like (${likeCount})`
+            })
+
+            dislikeButton.addEventListener('click', () => {
+                dislikeCount++
+                dislikeButton.textContent = `👎 Dislike (${dislikeCount})`
+            })
 
             imgContainer.appendChild(imgFood)
             imgContainer.appendChild(categoryName)
