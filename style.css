@@ -43,7 +43,7 @@ button {
     background-color: #ff6f61;
     color: white;
     border: none;
-    padding 10px 15px;
+    padding: 10px 15px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -53,4 +53,46 @@ button {
 
 button:hover {
     background-color: #e65b53;
+}
+
+/* Comment text area */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+
+/* Submit button */
+.comment-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.comment-button:hover {
+    background-color: rgb(60, 160, 60);
+}
+
+/* Comments container */
+.comments-container {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.comments-container p {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
