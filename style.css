@@ -15,10 +15,11 @@ h1 {
     margin: 0;
 }
 
-/* Food Gallery container */
-#food-gallery {
+/* Food Menu container */
+#food-menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
 }
+
