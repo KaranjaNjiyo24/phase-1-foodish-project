@@ -68,11 +68,24 @@ document.addEventListener("DOMContentLoaded", () => {
             submitCommentButton.addEventListener('click', () => {
                 const comment = commentTextArea.value.trim()
                 if (comment.length > 250) {
-                    alert("Commnet should be 250 characters or less.")
+                    alert("Comment should be 250 characters or less.")
                 } else if (comment !== "") {
+                    const commentContainer = document.createElement('div')
                     const commentParagraph = document.createElement('p')
                     commentParagraph.textContent = comment
                     commentsContainer.appendChild(commentParagraph)
+
+                    //Create edit and delete buttons
+                    const editButton = document.createElement('button')
+                    editButton.textContent = 'Edit'
+                    const deleteButton = document.createElement('button')
+                    deleteButton.textContent = 'Delete'
+
+                    //Append buttons to comment container
+                    commentContainer.appendChild(editButton)
+                    commentContainer.appendChild(deleteButton)
+                    commentsContainer.appendChild(commentContainer)
+                    
                     commentTextArea.value = ""
                 } else {
                     alert ("Please enter a valid comment.")
