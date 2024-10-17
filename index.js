@@ -57,6 +57,21 @@ document.addEventListener("DOMContentLoaded", () => {
             submitCommentButton.style.display = "block"
             submitCommentButton.style.margin = "10px auto"
 
+            //create a container for comments
+            const commentsContainer = document.createElement('div')
+            commentsContainer.style.marginTop = "10px"
+
+            //Handle content submission
+            submitCommentButton.addEventListener('click', () => {
+                const comment = commentTextArea.value.trim()
+                if (comment !== "") {
+                    const commentParagraph = document.createElement('p')
+                    commentParagraph.textContent = comment
+                    commentsContainer.appendChild(commentParagraph)
+                    commentTextArea.value = ""
+                }
+            })
+
 
             imgContainer.appendChild(imgFood)
             imgContainer.appendChild(categoryName)
@@ -64,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imgContainer.appendChild(dislikeButton)
             imgContainer.appendChild(commentTextArea)
             imgContainer.appendChild(submitCommentButton)
+            imgContainer.appendChild(commentsContainer)
             foodMenu.appendChild(imgContainer)
         })
 
