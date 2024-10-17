@@ -23,7 +23,7 @@ The **Food Menu App** leverages the **Foodish API** to display a selection of de
 ---
 
 ## 🎨 **Preview**
-![Food Menu](https://foodish-api.com/images/biryani/biryani43.jpg)
+![Food Menu](https://foodish-api.com/images/biryani/biryani37.jpg)
 
 ---
 
@@ -32,8 +32,8 @@ Follow these steps to get the project up and running on your local machine.
 
 ### 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/food-gallery-app.git
-cd food-gallery-app
+git clone https://git@github.com:KaranjaNjiyo24/phase-1-foodish-project.git
+cd food-menu-app
 ```
 
 ### 2. **Install live-server**
